@@ -30,3 +30,4 @@
 {"level":"error","message":"Arcjet middleware error: TypeError: Cannot read properties of undefined (reading 'id')","service":"acquisitions-api","timestamp":"2025-09-26T04:44:36.155Z"}
 {"level":"error","message":"Arcjet middleware error: [object Object]","service":"acquisitions-api","timestamp":"2025-09-26T04:46:56.629Z"}
 {"level":"error","message":"Arcjet middleware error: [object Object]","service":"acquisitions-api","timestamp":"2025-09-26T04:47:22.425Z"}
+{"level":"error","message":"Signup error: Email already exists","service":"acquisitions-api","stack":"Error: Email already exists\n    at createUser (file:///app/src/services/auth.service.js:18:38)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signup (file:///app/src/controllers/auth.controller.js:19:18)","timestamp":"2025-09-26T07:20:49.787Z"}

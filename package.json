@@ -1,0 +1,21 @@
+{
+  "name": "acquisitions",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khoahocmai/acquisitions.git"
+  },
+  "keywords": [],
+  "author": "khoahocmai | doduongdangkhoa",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "17.2.2",
+    "express": "5.1.0"
+  }
+}

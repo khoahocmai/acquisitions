@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRouter from '#routes/auth.routes.js';
+import userRouter from '#routes/user.routes.js';
 import securityMiddleware from '#middlewares/security.middleware.js';
 
 const app = express();
@@ -16,7 +17,7 @@ app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(cookieParser()); // Parse cookies
 app.use(morgan('combined', { stream: { write: message => logger.info(message.trim()) } })); // HTTP request logging
 
-app.use(securityMiddleware); // Custom security middleware
+// app.use(securityMiddleware); // Custom security middleware
 
 app.get('/', (req, res) => {
   res.status(200).send('Hello from Acquisitions!');
@@ -37,5 +38,6 @@ app.get('/api', (req, res) => {
 });
 
 app.use('/api/auth', authRouter); // api/auth routes
+app.use('/api/user', userRouter); // api/user routes
 
 export default app;

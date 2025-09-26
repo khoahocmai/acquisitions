@@ -39,8 +39,8 @@
           "notNull": true,
           "default": "'user'"
         },
-        "createAt": {
-          "name": "createAt",
+        "createdAt": {
+          "name": "createdAt",
           "type": "timestamp",
           "primaryKey": false,
           "notNull": true,
